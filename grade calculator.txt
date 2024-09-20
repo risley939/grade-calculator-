@@ -1,0 +1,16 @@
+def grade_calculator():
+    students = {
+        "kamau": 85,
+        "lazarous": 90,
+        "gideon": 78,
+        "risley": 95
+    }
+    
+    total = sum(students.values())
+    average = total / len(students)
+    highest_student = max(students, key=students.get)
+    
+    print(f"Average grade: {average}")
+    print(f"Highest grade: {highest_student} with {students[highest_student]}")
+
+grade_calculator()s
